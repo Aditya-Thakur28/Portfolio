@@ -31,6 +31,9 @@
             background-color: #354922; /* Darker shade */
             padding: 10px 0; /* Adjust padding */
             box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            display: flex;
+            flex-wrap: wrap; /* Allow content to wrap */
+            justify-content: center; /* Center the content */
         }
 
         nav a {
@@ -148,6 +151,11 @@
             .header-shrink .profile-image {
                 height: 50px; /* Even smaller size when header shrinks */
             }
+
+            nav a {
+                margin: 5px; /* Reduce margin for nav links */
+                padding: 5px; /* Reduce padding for nav links */
+            }
         }
     </style>
 </head>
@@ -156,8 +164,8 @@
         <img class="profile-image" src="portfolio-image.jpg" alt="Aditya Thakur"> 
         <div>
             <h1>Aditya Thakur</h1>
-            
-            <h4 style="margin-bottom: 5px;">CGPA: 9.13</h4> <p>Passion and determination fuel continuous growth and excellence</p>
+            <h4 style="margin-bottom: 5px;">CGPA: 9.13</h4> 
+            <p>Passion and determination fuel continuous growth and excellence</p>
         </div>
     </header>
     <nav>
@@ -187,19 +195,30 @@
             </ul>
         </section>
         <section id="projects" class="section-card projects">
-            <h2 class="section-title="section-title">Projects</h2>
+            <h2 class="section-title">Projects</h2>
             <ul>
                 <li>
                     <strong>Namo Nirvana</strong>
-                    <p><ul><b>Project Type :</b> Group project (Group of 11)</ul><ul><b>Role :</b> Creation and stimulation of CAD model</ul><ul><b>Description  :</b>This project was developed in the 1st year of our undergraduate in response to the problem statement provided for the ISRO Robotics Challenge (IRoC-U) 2024, which required the creation of a space robot prototype aided by computer vision.</ul> <br><a href="https://www.linkedin.com/posts/harsh0108yadav_isrochallenge2024-teamnamonirvana-roboticsinnovation-ugcPost-7158163281386299392-Ub72?utm_source=share&utm_medium=member_desktop"><b>Verification</b></a></p>
+                    <p>
+                        <ul><b>Project Type :</b> Group project (Group of 11)</ul>
+                        <ul><b>Role :</b> Creation and simulation of CAD model</ul>
+                        <ul><b>Description :</b> This project was developed in the 1st year of our undergraduate in response to the problem statement provided for the ISRO Robotics Challenge (IRoC-U) 2024, which required the creation of a space robot prototype aided by computer vision.</ul>
+                        <br>
+                        <a href="https://www.linkedin.com/posts/harsh0108yadav_isrochallenge2024-teamnamonirvana-roboticsinnovation-ugcPost-7158163281386299392-Ub72?utm_source=share&utm_medium=member_desktop"><b>Verification</b></a>
+                    </p>
                 </li>
                 <li>
                     <strong>SuperMarket Management System</strong>
-                    <p>                    <ul><b>Project Type :</b> Individual</ul><ul><b>Description  :</b>This was a project created in Java with connectivity to MySQL, consisting of two interfaces one for the customer and one for the store management. This could be used by small and medium-size enterprises to bring business online and have a smooth track of inventory.</ul><br><a href="https://github.com/Aditya-Thakur28/SuperMarketManagementSystem"><b>Project Link</b></a></p>
+                    <p>
+                        <ul><b>Project Type :</b> Individual</ul>
+                        <ul><b>Description :</b> This was a project created in Java with connectivity to MySQL, consisting of two interfaces one for the customer and one for the store management. This could be used by small and medium-size enterprises to bring business online and have a smooth track of inventory.</ul>
+                        <br>
+                        <a href="https://github.com/Aditya-Thakur28/SuperMarketManagementSystem"><b>Project Link</b></a>
+                    </p>
                 </li>
             </ul>
         </section>
-         <section id="curriculars" class="section-card curriculars">
+        <section id="curriculars" class="section-card curriculars">
             <h2 class="section-title">Co-Curriculars</h2>
             <ul>
                 <li>
