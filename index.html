@@ -78,12 +78,12 @@
             color: #333; /* Darker text for contrast */
         }
 
-        .skills ul, .projects ul, .curriculars ul {
+        .skills ul, .projects ul, .curriculars ul, .education ul, .about ul {
             list-style-type: none;
             padding: 0;
         }
 
-        .skills li, .projects li, .curriculars li {
+        .skills li, .projects li, .curriculars li, .education li, .about li {
             background-color: #ffe4b5; /* Peach color */
             margin-bottom: 10px;
             padding: 10px;
@@ -91,7 +91,7 @@
             transition: background-color 0.3s;
         }
 
-        .skills li:hover, .projects li:hover, .curriculars li:hover {
+        .skills li:hover, .projects li:hover, .curriculars li:hover, .education li:hover, .about li:hover {
             background-color: #ffdab9; /* Light peach color */
         }
 
@@ -137,11 +137,6 @@
             height: 75px; /* Smaller size when header shrinks */
         }
 
-        /* Hover effect for education section */
-        .education:hover {
-            transform: scale(1.05);
-        }
-
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .profile-image {
@@ -161,14 +156,15 @@
 </head>
 <body>
     <header id="main-header">
-        <img class="profile-image" src="portfolio.png" alt="Aditya Thakur"> 
+        <img class="profile-image" src="portfolio-image.jpg" alt="Aditya Thakur"> 
         <div>
             <h1>Aditya Thakur</h1>
-            <h4 style="margin-bottom: 5px;">CGPA: 9.13</h4> 
+            
             <p>Passion and determination fuel continuous growth and excellence</p>
         </div>
     </header>
     <nav>
+        <a href="#about">About Me</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -176,13 +172,37 @@
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
+        <section id="about" class="section-card about">
+            <h2 class="section-title">About Me</h2>
+            <p>
+      
+
+As a B.Tech student at Vellore Institute of Technology Chennai, I am deeply committed to leveraging coding to tackle real-world challenges with enthusiasm and determination. Through small real -world projects, I continuously hone my skills, aiming not just to meet but to exceed industry standards.</p><p> With a fervent passion for problem-solving, I approach each task as an opportunity for growth and learning. I am driven by the desire to explore new technologies and stay at the forefront of innovation.</p><p> Embarking on this journey of personal and professional development, I am poised to make a meaningful impact in the ever-evolving realm of technology.
+            </p>
+        </section>
         <section id="education" class="section-card education">
             <h2 class="section-title">Education</h2>
-            <p><strong>VIT Chennai</strong><br>B.Tech Civil Engineering with Minors in AI and ML<br>CGPA: 9.13 <br>2023 - 2027</p>
-            <p><strong>PM Shree Kendriya Vidyalaya IMA, Dehradun</strong><br>Intermediate<br>Percentage: 90.00 <br>2020 - 2022</p>
-            <p><strong>St. Mary's Sec. School, Clement Town, Dehradun</strong><br>Matriculation<br>Percentage: 95.00 <br>2017 - 2020</p>
+            <ul>
+                <li>
+                    <h3>VIT Chennai</h3>
+                    <p>B.Tech Civil Engineering with Minors in AI and ML</p>
+                    <p>CGPA: 9.13</p>
+                    <p>2023 - 2027</p>
+                </li>
+                <li>
+                    <h3>PM Shree Kendriya Vidyalaya IMA, Dehradun</h3>
+                    <p>Intermediate</p>
+                    <p>Percentage: 90.00</p>
+                    <p>2020 - 2022</p>
+                </li>
+                <li>
+                    <h3>St. Mary's Sec. School, Clement Town, Dehradun</h3>
+                    <p>Matriculation</p>
+                    <p>Percentage: 95.00</p>
+                    <p>2017 - 2020</p>
+                </li>
+            </ul>
         </section>
-       
         <section id="skills" class="section-card skills">
             <h2 class="section-title">Technical Skills</h2>
             <ul>
@@ -240,7 +260,7 @@
             <div class="contact-info">
                 <p>Email: <a href="mailto:thakuraditya2811@gmail.com">thakuraditya2811@gmail.com</a></p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/aditya-thakur-007627249">LinkedIn Profile</a></p>
-                <p>GitHub: <a href="https://github.com/Aditya-Thakur28">GitHub Profile</a></p>
+                <p>GitHub: <a href="https://github.com/your-username">GitHub Profile</a></p>
             </div>
         </section>
     </div>
@@ -259,3 +279,4 @@
     </script>
 </body>
 </html>
+
