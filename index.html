@@ -13,13 +13,14 @@
             background-color: #fffaf0; /* Peach background */
         }
         header {
-                background-color: #556b2f; /* Olive green color */
-                color: white;
-                padding: 20px 10px; /* Adjust padding for left and right margins */
-                text-align: right;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
-                transition: all 0.3s ease; /* Smooth transition for shrinking effect */
-            }
+            background-color: #556b2f; /* Olive green color */
+            color: white;
+            padding: 20px 10px; /* Adjust padding for left and right margins */
+            text-align: right;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            transition: all 0.3s ease; /* Smooth transition for shrinking effect */
+            position: relative;
+        }
 
         .header-shrink {
             padding: 10px 0;
@@ -125,11 +126,28 @@
             width: auto;
             height: 150px;
             border-radius: 5%;
+            transition: height 0.3s ease;
+        }
+
+        /* Adjust profile image size based on header size */
+        .header-shrink .profile-image {
+            height: 75px; /* Smaller size when header shrinks */
         }
 
         /* Hover effect for education section */
         .education:hover {
             transform: scale(1.05);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .profile-image {
+                height: 100px; /* Smaller size on smaller screens */
+            }
+
+            .header-shrink .profile-image {
+                height: 50px; /* Even smaller size when header shrinks */
+            }
         }
     </style>
 </head>
@@ -222,4 +240,3 @@
     </script>
 </body>
 </html>
-
