@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Thakur's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fffaf0; /* Peach background */
+        }
+        header {
+                background-color: #556b2f; /* Olive green color */
+                color: white;
+                padding: 20px 10px; /* Adjust padding for left and right margins */
+                text-align: right;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+                transition: all 0.3s ease; /* Smooth transition for shrinking effect */
+            }
+
+        .header-shrink {
+            padding: 10px 0;
+            font-size: 0.8em;
+        }
+
+        nav {
+            background-color: #354922; /* Darker shade */
+            padding: 10px 0; /* Adjust padding */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px; /* Adjust margin */
+            padding: 5px 10px; /* Adjust padding */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #6b8e23; /* Darker olive green color for hover */
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .section-card {
+            flex-basis: 100%; /* Cover page width */
+            background-color: #f9f9f9; /* Off-white background */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            transition: all 0.3s ease; /* Smooth transition for expanding effect */
+        }
+
+        .section-card:hover {
+            transform: scale(1.05);
+        }
+
+        .section-title {
+            border-bottom: 2px solid #556b2f; /* Olive green color */
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            color: #333; /* Darker text for contrast */
+        }
+
+        .skills ul, .projects ul, .curriculars ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li, .projects li, .curriculars li {
+            background-color: #ffe4b5; /* Peach color */
+            margin-bottom: 10px;
+            padding: 10px;
+            border-left: 5px solid #556b2f; /* Olive green color */
+            transition: background-color 0.3s;
+        }
+
+        .skills li:hover, .projects li:hover, .curriculars li:hover {
+            background-color: #ffdab9; /* Light peach color */
+        }
+
+        .contact-info {
+            background-color: #ffe4b5; /* Peach color */
+            padding: 10px;
+            border-left: 5px solid #556b2f; /* Olive green color */
+            transition: background-color 0.3s;
+        }
+
+        .contact-info:hover {
+            background-color: #ffdab9; /* Light peach color */
+        }
+
+        a {
+            color: #556b2f; /* Olive green color */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #6b8e23; /* Darker olive green color for hover */
+        }
+
+        /* Blur effect on other sections when hovering over a section */
+        .container:hover .section-card:not(:hover) {
+            filter: blur(0.8px);
+        }
+
+        /* Image styles */
+        .profile-image {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: auto;
+            height: 150px;
+            border-radius: 5%;
+        }
+
+        /* Hover effect for education section */
+        .education:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <img class="profile-image" src="https://github.com/Aditya-Thakur28/Portfolio/blob/main/1.jpeg" alt="Aditya Thakur"> 
+        <div>
+            <h1>Aditya Thakur</h1>
+            
+            <h4 style="margin-bottom: 5px;">CGPA: 9.13</h4> <p>Passion and determination fuel continuous growth and excellence</p>
+        </div>
+    </header>
+    <nav>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#curriculars">Co-Curriculars</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="education" class="section-card education">
+            <h2 class="section-title">Education</h2>
+            <p><strong>VIT Chennai</strong><br>B.Tech Civil Engineering with Minors in AI and ML<br>CGPA: 9.13 <br>2023 - 2027</p>
+            <p><strong>PM Shree Kendriya Vidyalaya IMA, Dehradun</strong><br>Intermediate<br>Percentage: 90.00 <br>2020 - 2022</p>
+            <p><strong>St. Mary's Sec. School, Clement Town, Dehradun</strong><br>Matriculation<br>Percentage: 95.00 <br>2017 - 2020</p>
+        </section>
+       
+        <section id="skills" class="section-card skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <ul>
+                <li>Java Core</li>
+                <li>Object Oriented Programming</li>
+                <li>Python</li>
+                <li>RDBMS and SQL</li>
+                <li>AutoCad</li>
+                <li>Matlab</li>
+            </ul>
+        </section>
+        <section id="projects" class="section-card projects">
+            <h2 class="section-title="section-title">Projects</h2>
+            <ul>
+                <li>
+                    <strong>Namo Nirvana</strong>
+                    <p><ul><b>Project Type :</b> Group project (Group of 11)</ul><ul><b>Role :</b> Creation and stimulation of CAD model</ul><ul><b>Description  :</b>This project was developed in the 1st year of our undergraduate in response to the problem statement provided for the ISRO Robotics Challenge (IRoC-U) 2024, which required the creation of a space robot prototype aided by computer vision.</ul> <br><a href="https://www.linkedin.com/posts/harsh0108yadav_isrochallenge2024-teamnamonirvana-roboticsinnovation-ugcPost-7158163281386299392-Ub72?utm_source=share&utm_medium=member_desktop"><b>Verification</b></a></p>
+                </li>
+                <li>
+                    <strong>SuperMarket Management System</strong>
+                    <p>                    <ul><b>Project Type :</b> Individual</ul><ul><b>Description  :</b>This was a project created in Java with connectivity to MySQL, consisting of two interfaces one for the customer and one for the store management. This could be used by small and medium-size enterprises to bring business online and have a smooth track of inventory.</ul><br><a href="https://github.com/Aditya-Thakur28/SuperMarketManagementSystem"><b>Project Link</b></a></p>
+                </li>
+            </ul>
+        </section>
+         <section id="curriculars" class="section-card curriculars">
+            <h2 class="section-title">Co-Curriculars</h2>
+            <ul>
+                <li>
+                    <h3>Magadh-Mithila Club, VIT Chennai</h3>
+                    <p>Cultural Club</p>
+                    <p>Member of the cultural department</p>
+                    <p>Learned: teamwork and public speaking</p>
+                </li>
+                <li>
+                    <h3>Namo Nirvana, VIT Chennai</h3>
+                    <p>Special Team</p>
+                    <p>Member of the CAD and Simulations Department</p>
+                    <p>Learned: real-world problem-solving and developed new approaches towards challenges</p>
+                </li>
+            </ul>
+        </section>
+        <section id="contact" class="section-card contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:thakuraditya2811@gmail.com">thakuraditya2811@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/aditya-thakur-007627249">LinkedIn Profile</a></p>
+                <p>GitHub: <a href="https://github.com/your-username">GitHub Profile</a></p>
+            </div>
+        </section>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('main-header');
+            var container = document.querySelector('.container');
+            if (window.scrollY > 50) {
+                header.classList.add('header-shrink');
+                container.style.paddingTop = '10px';
+            } else {
+                header.classList.remove('header-shrink');
+                container.style.paddingTop = '20px';
+            }
+        });
+    </script>
+</body>
+</html>
+
