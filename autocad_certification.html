@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCad Certificates</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fffaf0; /* Peach background */
+        }
+        header {
+            background: url('Background-header.png') center/cover no-repeat; /* Background image */
+            color: white;
+            padding: 20px;
+            margin: 20px; /* Margin from all sides */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            transition: all 0.3s ease; /* Smooth transition for shrinking effect */
+            position: relative;
+            text-align: right; /* Preserve original alignment */
+        }
+
+        .header-shrink {
+            padding: 10px;
+            font-size: 0.8em;
+        }
+
+        nav {
+            background-color: #354922; /* Darker shade */
+            padding: 10px 0; /* Adjust padding */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            display: flex;
+            flex-wrap: wrap; /* Allow content to wrap */
+            justify-content: center; /* Center the content */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px; /* Adjust margin */
+            padding: 5px 10px; /* Adjust padding */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #6b8e23; /* Darker olive green color for hover */
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .section-card {
+            flex-basis: 100%; /* Cover page width */
+            background-color: #f9f9f9; /* Off-white background */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            transition: all 0.3s ease; /* Smooth transition for expanding effect */
+        }
+
+        .section-card:hover {
+            transform: scale(1.05);
+        }
+
+        .section-title {
+            border-bottom: 2px solid #556b2f; /* Olive green color */
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            color: #333; /* Darker text for contrast */
+        }
+
+        .certificates {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .certificate {
+            max-width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden; /* Hide overflow content */
+        }
+
+        .certificate img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .certificate-details {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        .profile-image {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: auto;
+            height: 150px;
+            border-radius: 5%;
+            transition: height 0.3s ease;
+        }
+
+        /* Adjust profile image size based on header size */
+        .header-shrink .profile-image {
+            height: 75px; /* Smaller size when header shrinks */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .profile-image {
+                height: 100px; /* Smaller size on smaller screens */
+            }
+
+            .header-shrink .profile-image {
+                height: 50px; /* Even smaller size when header shrinks */
+            }
+
+            nav a {
+                margin: 5px; /* Reduce margin for nav links */
+                padding: 5px; /* Reduce padding for nav links */
+            }
+
+            .certificate {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <img class="profile-image" src="portfolio.png" alt="Aditya Thakur"> 
+        <div>
+            <br><br>
+            <p><br><br></p>
+            <h1>ADITYA THAKUR</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="#certifications">Certifications</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section-card about">
+            <h2 class="section-title">About My AutoCad Journey</h2>
+            <p>As an undergraduate student in civil engineering, proficiency in computer-aided design (CAD) software is essential. At VIT Chennai, during my first semester, I was introduced to AutoCAD, a widely utilized tool for creating precise 3D models and building plans. Recognizing its significance in my field, I devoted substantial time to mastering AutoCAD's functionalities.</p>
+            <p>Through diligent practice and dedication, I familiarized myself with various commands and techniques essential for efficient drafting in AutoCAD. This included honing my skills in both 2D and 3D modeling, ensuring that I could accurately translate architectural concepts into digital representations.</p>
+            <p>Now, having attained a proficient level of expertise in AutoCAD, I am capable of swiftly generating building plans and 3D models with precision and efficiency. The hours invested in learning and practice have equipped me to navigate the software adeptly, allowing me to create detailed designs without the need for daily practice sessions.</p>
+
+        </section>
+        <section id="certifications" class="section-card certifications">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certificates">
+                <div class="certificate">
+                    <img src="Java_certification.jpg" alt="Certificate">
+                    <div class="certificate-details">
+                        <p>Issue Date: ---</p>
+                        <p>Issued By: ---</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('main-header');
+            var container = document.querySelector('.container');
+            if (window.scrollY > 50) {
+                header.classList.add('header-shrink');
+                container.style.paddingTop = '10px';
+            } else {
+                header.classList.remove('header-shrink');
+                container.style.paddingTop = '20px';
+            }
+        });
+    </script>
+</body>
+</html>
