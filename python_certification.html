@@ -95,13 +95,44 @@
         }
 
         .certificate img {
-            max-width: 100%;
+            height=600px;
+            width=800px;
             border-radius: 5px;
         }
 
         .certificate-details {
             margin-top: 10px;
             font-size: 0.9em;
+        }
+         .profile-image {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: auto;
+            height: 150px;
+            border-radius: 5%;
+            transition: height 0.3s ease;
+        }
+
+        /* Adjust profile image size based on header size */
+        .header-shrink .profile-image {
+            height: 75px; /* Smaller size when header shrinks */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .profile-image {
+                height: 100px; /* Smaller size on smaller screens */
+            }
+
+            .header-shrink .profile-image {
+                height: 50px; /* Even smaller size when header shrinks */
+            }
+
+            nav a {
+                margin: 5px; /* Reduce margin for nav links */
+                padding: 5px; /* Reduce padding for nav links */
+            }
         }
     </style>
 </head>
