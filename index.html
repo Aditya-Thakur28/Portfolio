@@ -152,6 +152,49 @@
                 padding: 5px; /* Reduce padding for nav links */
             }
         }
+
+        /* Skills section with circular icons */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .skill-circle {
+            background-color: #ffe4b5; /* Peach color */
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 2px solid #556b2f; /* Olive green color */
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .skill-circle:hover {
+            background-color: #ffdab9; /* Light peach color */
+            transform: scale(1.1);
+        }
+
+        /* Responsive design for skill circles */
+        @media (max-width: 768px) {
+            .skill-circle {
+                width: 80px;
+                height: 80px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skill-circle {
+                width: 60px;
+                height: 60px;
+                font-size: 0.8em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -176,7 +219,6 @@
             <h2 class="section-title">About Me</h2>
             <p>
       
-
 As a B.Tech student at Vellore Institute of Technology Chennai, I am deeply committed to leveraging coding to tackle real-world challenges with enthusiasm and determination. Through small real -world projects, I continuously hone my skills, aiming not just to meet but to exceed industry standards.</p><p> With a fervent passion for problem-solving, I approach each task as an opportunity for growth and learning. I am driven by the desire to explore new technologies and stay at the forefront of innovation.</p><p> Embarking on this journey of personal and professional development, I am poised to make a meaningful impact in the ever-evolving realm of technology.
             </p>
         </section>
@@ -205,14 +247,15 @@ As a B.Tech student at Vellore Institute of Technology Chennai, I am deeply comm
         </section>
         <section id="skills" class="section-card skills">
             <h2 class="section-title">Technical Skills</h2>
-            <ul>
-                <li>Core Java </li>
-                <li>Object Oriented Programming</li>
-                <li>Python</li>
-                <li>RDBMS and SQL</li>
-                <li>AutoCad</li>
-                <li>Matlab</li>
-            </ul>
+            <div class="skills-container">
+                <div class="skill-circle">Core Java</div>
+                <div class="skill-circle">OOP</div>
+                <div class="skill-circle">Python</div>
+                <div class="skill-circle">RDBMS and SQL</div>
+                <div class="skill-circle">Video Editing</div>
+                <div class="skill-circle">AutoCAD</div>
+                <div class="skill-circle">Matlab</div>
+            </div>
         </section>
         <section id="projects" class="section-card projects">
             <h2 class="section-title">Projects</h2>
@@ -279,4 +322,3 @@ As a B.Tech student at Vellore Institute of Technology Chennai, I am deeply comm
     </script>
 </body>
 </html>
-
