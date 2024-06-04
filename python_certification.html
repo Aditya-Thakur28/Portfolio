@@ -149,7 +149,7 @@
     <nav>
         
         
-        <a href="#contact">Certifications</a>
+        <a href="#certifications">Certifications</a>
     </nav>
     <div class="container">
         <section id="about" class="section-card about">
@@ -178,10 +178,21 @@
                         <p>Issued By: Spoken Tutorial, IIT Bombay</p>
                     </div>
                 </div>
-               
-              
             </div>
         </section>
     </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('main-header');
+            var container = document.querySelector('.container');
+            if (window.scrollY > 50) {
+                header.classList.add('header-shrink');
+                container.style.paddingTop = '10px';
+            } else {
+                header.classList.remove('header-shrink');
+                container.style.paddingTop = '20px';
+            }
+        });
+    </script>
 </body>
 </html>
