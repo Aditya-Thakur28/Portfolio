@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatLab Certificates</title>
+    <title>Aditya Thakur's Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,7 +17,7 @@
             background: url('Background-header.png') center/cover no-repeat; /* Background image */
             color: white;
             padding: 20px;
-            margin: 20px; /* Margin from all sides */
+            margin: px; /* Margin from all sides */
             box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
             transition: all 0.3s ease; /* Smooth transition for shrinking effect */
             position: relative;
@@ -79,39 +80,56 @@
             color: #333; /* Darker text for contrast */
         }
 
-        .certificates {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+        .skills ul, .projects ul, .curriculars ul, .education ul, .about ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        .certificate {
-            max-width: 100%;
-            border: 1px solid #ccc;
-            border-radius: 8px;
+        .skills li, .projects li, .curriculars li, .education li, .about li {
+            background-color: #ffe4b5; /* Peach color */
+            margin-bottom: 10px;
             padding: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            overflow: hidden; /* Hide overflow content */
+            border-left: 5px solid #556b2f; /* Olive green color */
+            transition: background-color 0.3s;
         }
 
-        .certificate img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
+        .skills li:hover, .projects li:hover, .curriculars li:hover, .education li:hover, .about li:hover {
+            background-color: #ffdab9; /* Light peach color */
         }
 
-        .certificate-details {
-            margin-top: 10px;
-            font-size: 0.9em;
+        .contact-info {
+            background-color: #ffe4b5; /* Peach color */
+            padding: 10px;
+            border-left: 5px solid #556b2f; /* Olive green color */
+            transition: background-color 0.3s;
         }
 
+        .contact-info:hover {
+            background-color: #ffdab9; /* Light peach color */
+        }
+
+        a {
+            color: #556b2f; /* Olive green color */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #6b8e23; /* Darker olive green color for hover */
+        }
+
+        /* Blur effect on other sections when hovering over a section */
+        .container:hover .section-card:not(:hover) {
+            filter: blur(0.8px);
+        }
+
+        /* Image styles */
         .profile-image {
             position: absolute;
-            top: 20px;
+            top: 15px;
             left: 20px;
             width: auto;
-            height: 150px;
+            height: 180px;
             border-radius: 5%;
             transition: height 0.3s ease;
         }
@@ -135,17 +153,19 @@
                 margin: 5px; /* Reduce margin for nav links */
                 padding: 5px; /* Reduce padding for nav links */
             }
-
             .certificate {
-                max-width: 100%;
+                max-width: 80%;
+		max-height: 20%
             }
         }
-    </style>
+
+	</style>
 </head>
 <body>
     <header id="main-header">
-        <a href="https://aditya-thakur28.github.io/Portfolio"><img class="profile-image" src="portfolio.png" alt="Aditya Thakur"></a> 
+        <a href="https://aditya-thakur28.github.io/Portfolio"><img class="profile-image" src="portfolio.png" alt="Aditya Thakur"> </a>
         <div>
+            
             <br><br>
             <p><br><br></p>
             <h1>ADITYA THAKUR</h1>
@@ -154,7 +174,7 @@
     <nav>
         <a href="#certifications">Certifications</a>
     </nav>
-    <div class="container">
+	    <div class="container">
         <section id="about" class="section-card about">
             <h2 class="section-title">About My DBMS and SQL Journey</h2>
             <p>During my initial semester of B.Tech at VIT Chennai, MatLab was introduced as a fundamental component of our curriculum. Its syntax bore striking similarities to Python, a language with which I already possessed a commendable familiarity. This prior acquaintance facilitated a swift comprehension of MatLab's concepts and operations.</p>
@@ -168,6 +188,20 @@
                     <div class="certificate-details">
                         <p>Issue Date: ---</p>
                         <p>Issued By: ---</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>            
+    </section>
+        <section id="certifications" class="section-card certifications">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certificates">
+                <div class="certificate">
+                    <img src="Java_Test.jpg" alt="Certificate">
+                    <div class="certificate-details">
+                        <p>Issue Date: June 06, 2024</p>
+                        <p>Issued By: Great Learning Academy</p>
                     </div>
                 </div>
             </div>
